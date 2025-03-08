@@ -94,7 +94,7 @@ public class lab2 {
     static void task5(){
         Scanner in = new Scanner(System.in);
         System.out.println("\nВведите целое десятичное число:");
-        int chislo = in.nextint();
+        //int chislo = in.nextint();
 
         System.out.println();
 
