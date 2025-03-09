@@ -2,10 +2,46 @@ import java.util.Scanner;
 
 public class lab2 {
     public static void main(String[] args){
-        task1();
-        task2();
-        task3();
-        task4();
+        Scanner in = new Scanner(System.in);
+        System.out.println("\nВведите номер задания:");
+        int zadan = in.nextInt();
+
+        in.close();
+
+        switch (zadan){
+            case (0):{
+                System.out.println("\nПрограмма завершена!\n");
+                break;
+
+            }
+            case (1):{
+                task1();
+                break;
+
+            }
+            case (2):{
+                task2();
+                break;
+            }
+            case (3):{
+                task3();
+                break;
+            }
+            case (4):{
+                task4();
+                break;
+            }
+            case (5):{
+                task5();
+                break;
+            }
+            case (6):{
+                break;
+            }
+            case (7):{
+                break;
+            }
+        }
     }
 
 
@@ -37,7 +73,7 @@ public class lab2 {
 
         if (hasNegative) {
             double skuirt = (Math.floor(Math.sqrt(mul)*100)/100);
-            System.out.println("Квадратный корень из произведения отрицательных чисел ~ " + skuirt);
+            System.out.println("\nКвадратный корень из произведения отрицательных чисел ~ " + skuirt);
         } else {
             System.out.println("В массиве нет отрицательных чисел.");
         }
