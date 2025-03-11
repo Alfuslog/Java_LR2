@@ -7,6 +7,9 @@ public class lab2 {
 
         while (rabota) {
             System.out.println("\n\n\nВведите номер задания:");
+//            if (Exception e){
+//                System.out.println("Неверный Ввод");
+//            }
             int zadan = in.nextInt();
             switch (zadan) {
                 case (0): {
@@ -42,8 +45,6 @@ public class lab2 {
                 }
                 default: {System.out.println("Введено некорректное значение!");}
             }
-
-
         }
         in.close();
     }
@@ -52,12 +53,12 @@ public class lab2 {
     static 	void task1(){
         System.out.println("\n  Задание 1\n  Вывод максимальных и минимальных значений для каждого объектного типа данных:");
         System.out.println("\n\tТип данных\t|\tМаксимальное значение\t|\tМинимальное значение");
-        System.out.println("\tByte\t\t\t"+Byte.MAX_VALUE+"\t\t\t\t\t\t\t"+Byte.MIN_VALUE);
-        System.out.println("\tShort\t\t\t"+Short.MAX_VALUE+"\t\t\t\t\t\t"+Short.MIN_VALUE);
-        System.out.println("\tInteger\t\t\t"+Integer.MAX_VALUE+"\t\t\t\t\t"+Integer.MIN_VALUE);
-        System.out.println("\tInteger\t\t\t"+Integer.MAX_VALUE+"\t\t\t\t\t"+Integer.MIN_VALUE);
-        System.out.println("\tFloat\t\t\t"+Float.MAX_VALUE+"\t\t\t\t"+Float.MIN_VALUE);
-        System.out.println("\tDouble\t\t\t"+Double.MAX_VALUE+"\t\t"+Double.MIN_VALUE+"\n\n");
+        System.out.println("\tByte\t\t|\t"+Byte.MAX_VALUE+"\t\t\t\t\t\t|\t"+Byte.MIN_VALUE);
+        System.out.println("\tShort\t\t|\t"+Short.MAX_VALUE+"\t\t\t\t\t|\t"+Short.MIN_VALUE);
+        System.out.println("\tInteger\t\t|\t"+Integer.MAX_VALUE+"\t\t\t\t|\t"+Integer.MIN_VALUE);
+        System.out.println("\tInteger\t\t|\t"+Integer.MAX_VALUE+"\t\t\t\t|\t"+Integer.MIN_VALUE);
+        System.out.println("\tFloat\t\t|\t"+Float.MAX_VALUE+"\t\t\t|\t"+Float.MIN_VALUE);
+        System.out.println("\tDouble\t\t|\t"+Double.MAX_VALUE+"\t|\t"+Double.MIN_VALUE+"\n\n");
     }
 
     static void task2(){
@@ -127,10 +128,10 @@ public class lab2 {
         if (distRr > distance){
             System.out.println("\nНе обнаружен\n");
         }
-            else{
-                System.out.println("\nПеремога!\n");
-            }
+        else{
+            System.out.println("\nПеремога!\n");
         }
+    }
     static void task5(){
         Scanner in = new Scanner(System.in);
         System.out.println("\nВведите целое десятичное число:");
@@ -139,4 +140,4 @@ public class lab2 {
         System.out.println();
 
     }
-    }
+}
