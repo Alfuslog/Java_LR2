@@ -3,45 +3,49 @@ import java.util.Scanner;
 public class lab2 {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        System.out.println("\nВведите номер задания:");
-        int zadan = in.nextInt();
+        boolean rabota = true;
 
-        in.close();
+        while (rabota) {
+            System.out.println("\n\n\nВведите номер задания:");
+            int zadan = in.nextInt();
+            switch (zadan) {
+                case (0): {
+                    System.out.println("\n\nПрограмма завершена!\nСпасибо за использование!!");
+                    rabota = false;
+                    break;
+                }
+                case (1): {
+                    task1();
+                    break;
+                }
+                case (2): {
+                    task2();
+                    break;
+                }
+                case (3): {
+                    task3();
+                    break;
+                }
+                case (4): {
+                    task4();
+                    break;
+                }
+                case (5): {
+                    task5();
+                    break;
+                }
+                case (6): {
+                    break;
+                }
+                case (7): {
+                    break;
+                }
+                default: {System.out.println("Введено некорректное значение!");}
+            }
 
-        switch (zadan){
-            case (0):{
-                System.out.println("\nПрограмма завершена!\n");
-                break;
 
-            }
-            case (1):{
-                task1();
-                break;
-
-            }
-            case (2):{
-                task2();
-                break;
-            }
-            case (3):{
-                task3();
-                break;
-            }
-            case (4):{
-                task4();
-                break;
-            }
-            case (5):{
-                task5();
-                break;
-            }
-            case (6):{
-                break;
-            }
-            case (7):{
-                break;
-            }
         }
+        in.close();
     }
 
 
