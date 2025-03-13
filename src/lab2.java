@@ -1,4 +1,4 @@
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 
 import java.util.Scanner;
 import java.io.IOException;
@@ -89,17 +89,6 @@ public class lab2 {
         }
         in.close();
     }
-//idexof  //substring
-//    static int CntIndexOf(){
-//        String stroka = "Priveteke";
-//        String podstroka = "e";
-//        int cntIndx = 0;
-//        String[] strokaArray = stroka.length();
-//        for (String s: stroka){
-//
-//        }
-//        return cntIndx;
-//    }
 
     static void task1(){
         System.out.println("\n  Задание 1\n  Вывод максимальных и минимальных значений для каждого объектного типа данных:");
@@ -227,9 +216,18 @@ public class lab2 {
         //System.exit(0);
     }
     static void task9(){
+        String stroka = "Priveteke";
+        String podstroka = "e";
+        int Indx  = 0;
+        int cnt = 0;
 
+        while (-1 != stroka.indexOf(podstroka)){
+            Indx = stroka.indexOf(podstroka, Indx);
+            cnt++;
+            Indx += podstroka.length();
+        }
 
-        System.out.println("\n"+CntIndexOf());
+        System.out.println("\nКоличество подстрок = "+cnt);
     }
     static void task10(){
         String stroka = "abcd";
